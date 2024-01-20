@@ -1,0 +1,20 @@
+/* styles.css */
+
+body {
+    background-color: #d2d2c9;
+    font-size: 25px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    background-color: #d2d2c9;
+    padding: 20px;
+    font-family: 'Samarkan', cursive; /* Use the Samarkan font for the h1 element */
+    font-size: 60px;
+}
+h2 {
+    font-weight: bold; /* Make the text bold */
+    text-decoration: underline; /* Add an underline to the text */
+    font-size: 40px;
+}
