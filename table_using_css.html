@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table using css</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+       body
+       {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        margin: 10px;
+        padding: 2%;
+        border: 5px double black;
+        position: relative;
+       }
+       .div1 {
+      position: relative;
+       }
+
+     form.div2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: 10px;
+      }
+      p.div3 {
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 47%;
+      transform: translateX(-50%);
+      width: 100%;
+      margin: 25px;
+      font-size: 30px;
+       }
+      form.search-form {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 10px;
+      }
+     table{
+        position: relative;
+        top: 30px;
+     }
+     table{
+        border-collapse: collapse;
+        margin-left: 10px;
+        margin-right: 10px;
+        width:auto;
+      }
+     table, td, th{
+        border: 1px solid black;
+     }
+     table,tr{
+        text-align: left;
+     }
+     p.div4{
+        position: relative;
+        bottom: -20px;
+        left: 10px;
+     }
+     .pagination a{
+        font-size: xx-small;
+        color: black;
+        padding: 10px;
+        background-color: lightgrey;
+        text-decoration: none;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: .5px;
+        height: .0001px;
+        margin-right: 10px;
+        position: relative;
+        bottom: 15px;
+        left: 528px;
+     }
+     .pagination a:first-child,
+     .pagination a:last-child {
+      border-radius: 0px;
+      width: auto;
+      background-color: lightgrey;
+    }
+     .pagination a.active {
+        background-color: #15adff;
+        color: white;
+     }
+     .pagination a:hover:not(.active){
+        background-color: #eee;
+     }
+    </style>
+</head>
+<body>
+ <div class="div1">
+ <form class="div2">
+    <label for="entries">show</label>
+    <select id="entries" name="entries">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="5" selected>5</option>
+    </select> entries
+ </form>
+ </div>
+ <div class="div1">
+ <form class="search-form">
+    <input type="search" placeholder="Search">
+ </form>
+ </div>
+ <p class="div3">Customer <span style="font-weight: bold;">Details</span></p><br><br>
+ <table>
+    <tr>
+        <th>#</th>
+        <th>Name <i class="fa fa-sort"></i></th>
+        <th>Address</i></th>
+        <th>City <i class="fa fa-sort"></i></th>
+        <th>Pincode</th>
+        <th>Country <i class="fa fa-sort"></i></th>
+        <th>Actions</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Thomas Hardy</td>
+        <td>89 Chiarsco Rd.</td>
+        <td>Portland</td>
+        <td>91219</td>
+        <td>USA</td>
+        <td><i class="fa fa-eye" style="color:skyblue"></i> <i class="fa fa-pencil" style="color:orange"></i> <i class="fa fa-trash-o" style="color: red;"></i></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Maria Anders</td>
+        <td>Obere Str.57</td>
+        <td>Berlin</td>
+        <td>12209</td>
+        <td>Germany</td>
+        <td><i class="fa fa-eye" style="color:skyblue"></i> <i class="fa fa-pencil" style="color:orange"></i> <i class="fa fa-trash-o" style="color: red;"></i></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Fran Wilson</td>
+        <td>C/Araquil,67</td>
+        <td>Madrid</td>
+        <td>28023</td>
+        <td>Spain</td>
+        <td><i class="fa fa-eye" style="color:skyblue"></i> <i class="fa fa-pencil" style="color:orange"></i> <i class="fa fa-trash-o" style="color: red;"></i></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Dominic Perrier</td>
+        <td>25,rue Lauriston</td>
+        <td>Paris</td>
+        <td>75016</td>
+        <td>France</td>
+        <td><i class="fa fa-eye" style="color:skyblue"></i> <i class="fa fa-pencil" style="color:orange"></i> <i class="fa fa-trash-o" style="color: red;"></i></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Martin Blank</td>
+        <td>Via Monteblanco 34</td>
+        <td>Turin</td>
+        <td>10100</td>
+        <td>Italy</td>
+        <td><i class="fa fa-eye" style="color:skyblue"></i> <i class="fa fa-pencil" style="color:orange"></i> <i class="fa fa-trash-o" style="color: red;"></i></td>
+    </tr>
+ </table>
+ <p class="div4">Showing<span style="font-weight: bold;"> 5</span> out of<span style="font-weight: bold;"> 25</span> entries</p>
+ <div class="pagination">
+    <a href="#">Previous</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a class="active" href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">Mext</a>
+  </div>
+</body>
+</html>
